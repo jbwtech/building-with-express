@@ -10,6 +10,7 @@ const feedbackService = new FeedbackService('./data/feedback.json');
 const speakersService = new SpeakersService('./data/speakers.json');
 
 const routes = require('./routes');
+const { runInNewContext } = require('vm');
 
 const app = express();
 
